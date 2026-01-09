@@ -16,7 +16,7 @@ void LNR_CRASH()
 
 ## Purpose
 
-Lunari already has built in anti-tamper, but if you want to add your own custom checks, use this macro. It crashes the Lua VM when called when it is ran, the script crashes and cannot be recovered.
+Lunari already has built in anti-tamper, but if you want to add your own custom checks, use this macro. It crashes the Lua VM when it is ran, the script crashes and cannot be recovered.
 
 ## Correct Usage ✅
 
@@ -82,4 +82,5 @@ end
 -- Bad - crashes everyone
 LNR_CRASH()
 ```
+
 
