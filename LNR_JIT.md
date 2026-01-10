@@ -1,13 +1,11 @@
 # LNR_JIT / LNR_JIT_MAX
 
-**Make it Fast**
-
-Tells Lunari to go easier on a function so it runs faster. Use this for stuff that NEEDS speed.
+**Speed Based Macros**
 
 ## Aliases
 
-- `LNR_JIT` - Lighter obfuscation
-- `LNR_JIT_MAX` - Even lighter (fastest)
+- `LNR_JIT` - Weaker obfuscation
+- `LNR_JIT_MAX` - Even Weaker (fastest)
 
 ## Usage
 
@@ -18,7 +16,7 @@ function LNR_JIT_MAX(const function To_Optimize)
 
 ## Purpose
 
-If you have functions that need to run fast (like render loops or heavy math), this macro tells Lunari to use lighter obfuscation on them. The function still gets protected, just not as heavily.
+If you have functions that need to run fast (like render loops or heavy math), this macro tells Lunari to use weaker obfuscation on them. The function still gets protected, just not as heavily.
 
 ## Correct Usage ✅
 
@@ -144,4 +142,5 @@ Faster = less protected. Don't use these on:
 - Custom anti-tamper code
 - Sensitive business logic
 - Anything you really want secured
+
 
